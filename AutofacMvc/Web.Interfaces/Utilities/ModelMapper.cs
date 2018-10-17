@@ -64,7 +64,7 @@ namespace Web.Interfaces.Utilities
                 {
                     if (!string.IsNullOrEmpty(srcPropNameParts[i]))
                     {
-                        destPropName = destPropName + srcPropNameParts[i].Substring(0, 1).ToUpper() + srcPropNameParts[i].ToLower().Substring(1);
+                        destPropName = destPropName + srcPropNameParts[i].Substring(0, 1) + srcPropNameParts[i].Substring(1);
                     }
                 }
                 var dstProp = destObj.GetType().GetProperty(destPropName);

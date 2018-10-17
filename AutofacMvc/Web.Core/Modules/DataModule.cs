@@ -22,6 +22,7 @@ namespace Web.Core.Modules
         {
             builder.Register(con => new WebDbContext(connStr)).As<IDbContext>().InstancePerRequest();
             builder.RegisterType<CustomerService>().As<ICustomerService>().InstancePerDependency();
+            builder.RegisterType<BookCategoriesService>().As<IBookCategoriesService>().InstancePerDependency();
             base.Load(builder);
         }
     }
