@@ -12,15 +12,17 @@ namespace Web.Gui.Controllers
     public class HomeController : Controller
     {
         private ICustomerService _customerService;
+        private IBookCategoriesService _bookCategoriesService;
 
-        public HomeController(ICustomerService customerService)
+        public HomeController(ICustomerService customerService, IBookCategoriesService bookCategoriesService)
         {
             this._customerService = customerService;
+            this._bookCategoriesService = bookCategoriesService;
         }
         public async Task<ActionResult> Index()
         {
-            var user = await _customerService.GetStringCheckDI();
-            return View("index", new UserViewModel { UserList = user.ToList()});
+            var bookCategories = await _bookCategoriesService.GetAllBookCategory();
+            return View("index", new BookCategoriesViewModel { BookCategoryList = bookCategories.ToList()});
         }
 
         public ActionResult About()

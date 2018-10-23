@@ -75,7 +75,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\AbstractEntity.cs" />
+    <Compile Include="Entities\BookCategoryEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
+    <Compile Include="Interfaces\IBookCategoriesService.cs" />
     <Compile Include="Interfaces\ICustomerService.cs" />
     <Compile Include="Interfaces\IDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

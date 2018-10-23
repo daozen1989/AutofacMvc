@@ -1,24 +1,24 @@
-﻿@model Web.Gui.Models.UserViewModel
+﻿@model Web.Gui.Models.BookCategoriesViewModel
 @{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
     <table style="border: solid 1px #000">
-        @foreach (var user in Model.UserList)
+        @foreach (var cate in Model.BookCategoryList)
         {
         <tr>
             <td style="padding:5px;">
-                @user.Id
+                @cate.CategoryId
             </td>
             <td style="padding:5px;">
-                @user.Name
+                @cate.CategoryName
             </td>
             <td style="padding:5px;">
-                @user.RoleId
+                @cate.DomainId
             </td>
             <td style="padding:5px;">
-                @user.TeamId
+                @cate.Description
             </td>
         </tr>
         }

@@ -11,11 +11,15 @@ namespace Web.Core.Repositories
 {
     public class CustomerService : BaseRepository, ICustomerService
     {
+        //public Task<IEnumerable<UserEntity>> GetStringCheckDI()
+        //{
+        //    //var result = Query(context => context.Teams.FirstOrDefault());
+        //    //var result = Search<User, UserEntity>(context => context.Users.AsNoTracking());
+        //    //return result;
+        //}
         public Task<IEnumerable<UserEntity>> GetStringCheckDI()
         {
-            //var result = Query(context => context.Teams.FirstOrDefault());
-            var result = Search<User, UserEntity>(context => context.Users.AsNoTracking());
-            return result;
+            throw new NotImplementedException();
         }
     }
 }

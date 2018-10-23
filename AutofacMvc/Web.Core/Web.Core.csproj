@@ -77,16 +77,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbEntities\Log.cs" />
-    <Compile Include="DbEntities\Role.cs" />
-    <Compile Include="DbEntities\Team.cs" />
-    <Compile Include="DbEntities\User.cs" />
+    <Compile Include="DbEntities\Audio.cs" />
+    <Compile Include="DbEntities\Author.cs" />
+    <Compile Include="DbEntities\Book.cs" />
+    <Compile Include="DbEntities\BookAudio.cs" />
+    <Compile Include="DbEntities\BookCategory.cs" />
+    <Compile Include="DbEntities\BookDomain.cs" />
+    <Compile Include="DbEntities\BookGroup.cs" />
+    <Compile Include="DbEntities\BookVideo.cs" />
+    <Compile Include="DbEntities\Video.cs" />
     <Compile Include="DbEntities\WebDbContext.cs" />
     <Compile Include="Extentions\CollectionExtensions.cs" />
     <Compile Include="Extentions\ObjectExtension.cs" />
     <Compile Include="Modules\DataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\BookCategoriesService.cs" />
     <Compile Include="Repositories\CustomerService.cs" />
   </ItemGroup>
   <ItemGroup>
